@@ -11,8 +11,19 @@ AllCops:
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
 
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - lib/bp3/**/railtie.rb
+
+Lint/Void:
+  Exclude:
+    - lib/bp3/**/railtie.rb
+
 Metrics/AbcSize:
   Max: 26
+
+Metrics/BlockLength:
+  Max: 66
 
 Metrics/CyclomaticComplexity:
   Max: 10
@@ -20,12 +31,15 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 15
 
+Metrics/ModuleLength:
+  Max: 150
+
 Metrics/PerceivedComplexity:
   Max: 10
 
 Naming/FileName:
   Exclude:
-    - lib/bp3-activeadmin.rb
+    - lib/bp3-*.rb
 
 RSpec/ExampleLength:
   Max: 10

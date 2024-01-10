@@ -32,7 +32,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'activeadmin', '~> 3.2'
+  spec.add_dependency 'activesupport', ['>= 7.1.2', '< 8']
 
+  # spec.add_development_dependency 'bp3-core' # TODO: make this work
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.21'
