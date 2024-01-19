@@ -6,7 +6,7 @@ module Bp3
   module Activeadmin
     class Railtie < Rails::Railtie
       initializer 'bp3.activeadmin.railtie.register' do |app|
-        app.config.after_initialize do # preload # preload
+        app.config.after_initialize do
           module ::ActiveAdmin
             module Filters
               # PrependResourceExtension ensures that the default_filters honor the ransackable attributes
