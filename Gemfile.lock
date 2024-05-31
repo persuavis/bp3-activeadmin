@@ -1,18 +1,10 @@
-GIT
-  remote: https://github.com/persuavis/bp3-request_state
-  revision: 415b57cbea488416088e53db503663d192defe57
-  specs:
-    bp3-request_state (0.1.0)
-      actionpack (>= 7.1.2, < 8)
-      activesupport (>= 7.1.2, < 8)
-      request_store (>= 1.5.1, < 2)
-
 PATH
   remote: .
   specs:
     bp3-activeadmin (0.1.0)
       activeadmin (~> 3.2)
       activesupport (>= 7.1.2, < 8)
+      bp3-request_state (>= 0.1.0, < 2)
 
 GEM
   remote: https://rubygems.org/
@@ -64,6 +56,10 @@ GEM
     ast (2.4.2)
     base64 (0.2.0)
     bigdecimal (3.1.6)
+    bp3-request_state (0.1.1)
+      actionpack (>= 7.1.2, < 8)
+      activesupport (>= 7.1.2, < 8)
+      request_store (>= 1.5.1, < 2)
     builder (3.2.4)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
@@ -155,7 +151,7 @@ GEM
     regexp_parser (2.9.0)
     reline (0.4.2)
       io-console (~> 0.5)
-    request_store (1.5.1)
+    request_store (1.7.0)
       rack (>= 1.4)
     responders (3.1.1)
       actionpack (>= 5.2)
@@ -213,7 +209,6 @@ PLATFORMS
 
 DEPENDENCIES
   bp3-activeadmin!
-  bp3-request_state!
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.21)
@@ -221,4 +216,4 @@ DEPENDENCIES
   rubocop-rspec (~> 2.25)
 
 BUNDLED WITH
-   2.4.22
+   2.5.11
