@@ -7,6 +7,8 @@ module Bp3
     class Railtie < Rails::Railtie
       initializer 'bp3.activeadmin.railtie.register' do |app|
         app.config.after_initialize do
+          ::ActiveAdmin::Filters # preload
+          ::ActiveAdmin::Comment # preload
           module ::ActiveAdmin
             module Filters
               # PrependResourceExtension ensures that the default_filters honor the ransackable attributes
