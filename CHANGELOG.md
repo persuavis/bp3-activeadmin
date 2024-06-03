@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.2] - 2024-06-03
+
+- Update gems
+
 ## [0.1.1] - 2024-05-31
 
 - Tweaks and documentation
