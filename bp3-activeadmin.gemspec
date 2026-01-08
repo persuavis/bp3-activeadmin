@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'activeadmin', '>= 3.2.2'
-  spec.add_dependency 'activesupport', '>= 7.1.2'
+  spec.add_dependency 'activesupport', '~> 8.1'
   spec.add_dependency 'bp3-core', '>= 0.1.0'
   spec.add_dependency 'bp3-request_state', '>= 0.1.0'
 
