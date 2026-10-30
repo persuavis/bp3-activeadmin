@@ -32,6 +32,20 @@ module Bp3
 
             class Comment
               include Bp3::Core::Ransackable
+
+              # ActiveAdmin defines these on the class itself, which beats anything included, so its
+              # answers stand only for plain ransack and Ransackable still answers EXPLORE
+              def self.ransackable_attributes(auth_object = nil)
+                return super if auth_object == Bp3::Core::Ransackable::EXPLORE
+
+                authorizable_ransackable_attributes
+              end
+
+              def self.ransackable_associations(auth_object = nil)
+                return super if auth_object == Bp3::Core::Ransackable::EXPLORE
+
+                authorizable_ransackable_associations
+              end
             end
           end
         end

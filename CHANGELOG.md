@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+### Security
+
+- Answer `EXPLORE` through `Bp3::Core::Ransackable` on `ActiveAdmin::Comment`, whose own class methods
+  otherwise allowed every column and association to it
+- Require bp3-core 0.4.0, for `Bp3::Core::Ransackable::EXPLORE`
+
 ## [0.2.0] - 2026-01-12
 
 - Update activeadmin gem dependency to 4.0.0.beta16
