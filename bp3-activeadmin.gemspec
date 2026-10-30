@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'activeadmin', '>= 4.0.0.beta16'
   spec.add_dependency 'activesupport', '~> 8.1'
-  spec.add_dependency 'bp3-core', '>= 0.1.0'
+  spec.add_dependency 'bp3-core', '>= 0.4.0'
   spec.add_dependency 'bp3-request_state', '>= 0.1.0'
 
   # spec.add_development_dependency 'bp3-core' # TODO: make this work
