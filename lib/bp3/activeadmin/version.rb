@@ -2,6 +2,6 @@
 
 module Bp3
   module Activeadmin
-    VERSION = '0.2.0'
+    VERSION = '0.2.1'
   end
 end

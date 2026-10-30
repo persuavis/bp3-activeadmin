@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.2.1] - 2026-10-30
+
 ### Security
 
 - Answer `EXPLORE` through `Bp3::Core::Ransackable` on `ActiveAdmin::Comment`, whose own class methods
