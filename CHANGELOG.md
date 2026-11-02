@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Rename the entry file to `lib/bp3-activeadmin.rb`, to match the gem
+
 ## [0.2.1] - 2026-10-30
 
 ### Security

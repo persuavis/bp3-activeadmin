@@ -30,9 +30,6 @@ shell is not already on it; a missing `rspec` means the wrong Ruby, not a missin
 `.global_request_state_method`. The application's `config/initializers/bp3-activeadmin.rb` sets them to
 `'GlobalRequestState'` and `:current_login` (the README's example still shows `:highest_privilege`).
 
-The entry file is `lib/bp3-active_admin.rb`, not `lib/bp3-activeadmin.rb`; Bundler's autorequire finds
-`bp3/activeadmin` instead.
-
 ## Testing
 
 The spec only checks the version; the Railtie needs a Rails application with ActiveAdmin to exercise. Try a

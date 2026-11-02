@@ -26,7 +26,7 @@ global state and the global state method that determines the `auth_object` used 
 
 ```ruby
 Bp3::Activeadmin.global_request_state_class_name = 'GlobalRequestState'
-Bp3::Activeadmin.global_request_state_method = :highest_privilege
+Bp3::Activeadmin.global_request_state_method = :current_login
 ```
 
 ## Development
