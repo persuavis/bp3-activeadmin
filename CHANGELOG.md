@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-20
+
+- Update gems
+- Require Ruby 4.0.10 and update Bundler to 4.1.0
+- Remove constantize memoization
 - Rename the entry file to `lib/bp3-activeadmin.rb`, to match the gem
 
 ## [0.2.1] - 2026-10-30
